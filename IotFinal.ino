@@ -98,7 +98,7 @@ void loop() {
     uid.toUpperCase();
 
     Serial.println("RFID UID: " + uid);
-    Blynk.virtualWrite(V1, uid); // Blynk uygulamasına RFID UID'sini gönder
+    Blynk.virtualWrite(V1, uid); // Send RFID UID to Blynk application
 
     if (uid == authorizedUID) {
       Serial.println("Accessed!");
@@ -106,7 +106,7 @@ void loop() {
       digitalWrite(greenLED, HIGH);
       digitalWrite(blueLED, LOW);
       Blynk.virtualWrite(V2, "Authorized Card Detected");
-      servo1.write(90); // Servoyu 90 dereceye hareket ettir
+      servo1.write(90); // Move the servo to 90 degrees
       delay(3000);
       digitalWrite(greenLED, LOW);
     } else {
