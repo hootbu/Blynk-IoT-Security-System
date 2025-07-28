@@ -1,4 +1,5 @@
 # ESP32 IoT Security System with Blynk
+###### Created by Emir Yorgun
 
 ## Overview
 This project demonstrates an IoT-based security system using an ESP32 board. It integrates RFID for access control, an MPU6050 accelerometer/gyroscope sensor, a servo motor, and an RGB LED for visual feedback. The system is controlled remotely via the **Blynk IoT Cloud** platform using a mobile interface.
